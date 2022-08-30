@@ -23,29 +23,29 @@ body {
 }
 
 header {
-  padding: 2.5rem;
+  padding: 5.3rem;
 }
 
 main ul {
-  margin: 0;
-  width: 85%;
-}
-
-ul img {
-  object-fit: cover;
+  margin: auto;
+  width: 95%;
 }
 
 main li {
   display: flex;
-  justify-content: space-between;
+  height: 33rem;
 }
+
+/* main li img{
+  width: 100%;
+  height: 100%;
+} */
 
 #item-content {
-  padding: 3rem;
-  /* flex-direction: column; */
+  padding: 3rem 1rem 5rem 4rem;
 }
 
-h1 {
+#item-content h1 {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 2.7rem;
@@ -53,7 +53,7 @@ h1 {
 }
 
 #item-content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 2.5rem;
 }
 
@@ -62,12 +62,21 @@ h1 {
   color: var(--color-primary-700);
   background-color: white;
   padding: 0.9rem 4rem;
-  border-radius: 25px;
+  border-radius: 50px;
   font-size: 1.2rem;
+  font-weight: 400;
+  box-shadow: 1px 1px 8px rgb(92, 92, 92);
+  transition: background-color, color 0.5s ease-out;
+}
+
+#btn:hover{
+  background-color: var(--color-secundary-300);
+  color: white;
 }
 
 #icons {
-  /* margin: 0 5rem 15rem 0; */
+  margin: 5rem 5rem 15rem 0;
+  /* margin-top: 1rem; */
   text-align: end;
   font-size: 1.2rem;
 }
@@ -79,6 +88,7 @@ h1 {
   padding: 0.9rem;
   margin-left: 1rem;
   align-self: flex-end;
+  transition: border-color, color 0.3s ease-out;
 }
 
 #icons i:hover{
@@ -87,9 +97,95 @@ h1 {
 }
 
 .attribution {
-  font-size: 11px;
+  margin-top: 13rem;
+  font-size: 1rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 80rem ){
+  main li{
+    height: 29rem;
+  }
+
+  #icons{
+    margin-top: 9rem;
+  }
+}
+
+@media (max-width: 75rem ){
+  main li{
+    height: 25rem;
+  }
+
+  #icons{
+    margin-top: 13rem;
+  }
+}
+
+/* Portrait mode */
+@media (max-width: 70rem ){
+
+  body{
+    background-image: url(../images/bg-mobile.svg);
+  }
+
+  header{
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+  }
+
+  header img{
+    height: 3rem;
+  }
+
+  main ul{
+    margin: 0;
+  }
+
+  main li{
+    height: 55rem;
+    flex-direction: column;
+  }
+
+  main li img{
+    width: 90%;
+    margin: auto;
+  }
+
+  #item-content{
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  #item-content h1{
+    font-size: 1.5rem;
+  }
+
+  #item-content p{
+    font-size: 1.1rem;
+  }
+
+  #icons{
+    margin: 5rem 0 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .attribution{
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 70rem ){
+  main li {
+    height: 50rem;
+  }
+}
+
+@media (max-width: 60rem ){
+  main li {
+    height: 45rem;
+  }
 }
