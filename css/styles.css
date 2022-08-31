@@ -16,10 +16,11 @@ body {
   left: 0;
   background-color: var(--color-primary-700);
   background-image: url("../images/bg-desktop.svg");
-  /* background-position: center; */
+  background-repeat: no-repeat;
   background-size: cover;
   color: white;
   font-family: var(--font-body);
+  min-height: 100vh;
 }
 
 header {
@@ -28,18 +29,13 @@ header {
 
 main ul {
   margin: auto;
-  width: 95%;
+  max-width: 95%;
 }
 
 main li {
   display: flex;
-  height: 33rem;
+  max-height: 33rem;
 }
-
-/* main li img{
-  width: 100%;
-  height: 100%;
-} */
 
 #item-content {
   padding: 3rem 1rem 5rem 4rem;
@@ -75,8 +71,7 @@ main li {
 }
 
 #icons {
-  margin: 5rem 5rem 15rem 0;
-  /* margin-top: 1rem; */
+  margin: 5rem 5rem 4rem 0;
   text-align: end;
   font-size: 1.2rem;
 }
@@ -96,37 +91,8 @@ main li {
   border-color: var(--color-secundary-300);
 }
 
-.attribution {
-  margin-top: 13rem;
-  font-size: 1rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media (max-width: 80rem ){
-  main li{
-    height: 29rem;
-  }
-
-  #icons{
-    margin-top: 9rem;
-  }
-}
-
-@media (max-width: 75rem ){
-  main li{
-    height: 25rem;
-  }
-
-  #icons{
-    margin-top: 13rem;
-  }
-}
-
 /* Portrait mode */
-@media (max-width: 70rem ){
+@media (max-width: 79.75rem ){
 
   body{
     background-image: url(../images/bg-mobile.svg);
@@ -137,7 +103,7 @@ main li {
   }
 
   header img{
-    height: 3rem;
+    max-height: 3rem;
   }
 
   main ul{
@@ -145,12 +111,12 @@ main li {
   }
 
   main li{
-    height: 55rem;
+    max-height: 55rem;
     flex-direction: column;
   }
 
   main li img{
-    width: 90%;
+    max-width: 90%;
     margin: auto;
   }
 
@@ -167,25 +133,17 @@ main li {
     font-size: 1.1rem;
   }
 
+  #btn{
+    padding: 0.9rem 5rem;
+  }
+
   #icons{
-    margin: 5rem 0 0 0;
+    margin: 5rem 0 5rem 0;
     text-align: center;
     font-size: 0.9rem;
   }
 
-  .attribution{
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 70rem ){
-  main li {
-    height: 50rem;
-  }
-}
-
-@media (max-width: 60rem ){
-  main li {
-    height: 45rem;
+  #icons i{
+    margin-left: 0.5rem;
   }
 }
