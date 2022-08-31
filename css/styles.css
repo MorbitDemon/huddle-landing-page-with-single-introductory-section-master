@@ -122,7 +122,7 @@ main li {
 
   #item-content{
     text-align: center;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 0 1rem 0;
   }
 
   #item-content h1{
@@ -135,6 +135,7 @@ main li {
 
   #btn{
     padding: 0.9rem 5rem;
+    font-size: 0.9rem;
   }
 
   #icons{
